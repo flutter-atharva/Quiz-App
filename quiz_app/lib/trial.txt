@@ -1,0 +1,10 @@
+ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        widget.correctCount = 0;
+                        widget.questionCout = 0;
+                        widget.selectedOption = -1;
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const QuizApp()));
+                      });
+                    },
+                    child: const Text("Reset"))
